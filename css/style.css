@@ -3,11 +3,11 @@ body {
 
 }
 
-img {
+.header_img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 1000px;
     padding: 10px;
 }
 
@@ -44,6 +44,7 @@ div {
 
 .reservations {
 	width: 1200px;
+	height: 600px;
 	border: 1px solid black;
 	overflow: auto;
 }
@@ -60,7 +61,16 @@ div {
 	border: 1px solid white;
     float: left; /* add this */
     padding: 10px;
+    margin: auto;
 
+}
+
+#reservation-table{
+	margin: auto;
+}
+
+form {
+	margin: 50px;
 }
 
 label {
@@ -76,6 +86,10 @@ input {
 	margin: 5px;
 }
 
+input[type=text]:focus {
+    border: 3px solid blue;
+}
+
 button {
 	width: 250px;
 	height: 35px;
@@ -88,6 +102,8 @@ button {
 th {
 	font-family: 'IBM Plex Mono', monospace;
 	color: white;
+	text-align: center;
+	width: 250px;
 }
 
 thead {
@@ -101,7 +117,13 @@ thead {
 }
 
 #map {
-	width: 400px;
+	width: 1000px;
 	height: 400px;
+	margin: auto;
+
+}
+
+.reviews_img {
+	margin-left: 100px;
 
 }
