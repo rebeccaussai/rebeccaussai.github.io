@@ -3,10 +3,69 @@
 <head>
 	<meta charset="UTF=8">
 	<title>bex's site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 </head>
 
 <body>
-	<h1>hello world! Making edits</h1>
+	<h1>Monk's Cafe</h1>
+	<h3>"The Coffee Shop"</h3>
+	<img class="header_img" src= "http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg">
+
+	<!--reservation section -->
+	<div class="reservations">
+		<h2>Reservations</h2>
+
+		<!--make reservation -->
+		<div class="make-reservation">
+			<h3>Make a Reservation</h3>
+			<div>
+				<form>
+    				<label>Name</label><input id="name" type="text" placeholder="Enter Name">
+    				<br><label>Day</label><input id="day" type="text" placeholder="Enter Day">
+    				<button>Confirm Reservation</button>
+				</form>
+				<!-- old version of forms
+				<label id="name">Name<textarea placeholder=""></textarea></label> 
+				<br><label id="day">Day<textarea placeholder=""></textarea></label>
+                <br><button class="button alert">Confirm</button> -->
+            </div>
+		</div>
+
+		<!-- existing reservations -->
+		<div class="existing-reservations"> 
+			<h3>Existing Reservations</h3>
+			<table id="reservation-table">
+				<thead>
+					<th>Column Header 1</th>
+					<th>Column Header 2</th>
+				</thead>
+					<tbody id="form-data"> [ form data will publish here ] </tbody>
+			</table>
+		</div>
+	</div> <!--end of reservation section -->
+
+	<!--start of come dine with us section-->
+	<div id="dine-with-us"> 
+		<h3>Come Dine With Us</h3>
+		<div id="map"</div>
+
+	</div> <!--end of come dine with us -->
+
+	<div id="reviews">
+		<h3>Customer Reviews</h3>
+
+	</div>
+
+
+
+      <!-- custom js -->
+      <script src="js/main.js"></script>
+      <!-- google maps -->
+      <!-- this was from 9.4 lesson 
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs" async defer></script> -->
+
+      <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs&callback=initMap"></script>
 
 
 </body>
