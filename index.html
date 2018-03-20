@@ -5,6 +5,15 @@
 	<title>bex's site</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+
+
+      <!-- custom js -->
+
+      <!-- set up jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script src="js/main.js"></script>
+      <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs&callback=initMap"></script>
 </head>
 
 <body>
@@ -36,11 +45,14 @@
 		<div class="existing-reservations"> 
 			<h3>Existing Reservations</h3>
 			<table id="reservation-table">
+				<tr>
 				<thead>
 					<th>Column Header 1</th>
 					<th>Column Header 2</th>
 				</thead>
-					<tbody id="form-data"> [ form data will publish here ] </tbody>
+					<td class="form-data"> [form data will publish here] </td>
+					<td class="form-data"> [form data will publish here] </td>
+				</tr>
 			</table>
 		</div>
 	</div> <!--end of reservation section -->
@@ -52,24 +64,20 @@
 
 	</div> <!--end of come dine with us -->
 
-	<div id="reviews">
+	<div id="reviews-section">
 		<h3>Customer Reviews</h3>
 		<img class="review_img" src= "jerry.jpg">
 		<div id="review-content"> 
-			<p> review content will go here but idk how to have this float next to the image</p>
+			<p id="user-reviews"> review content will go here but idk how to have this float next to the image.</p>
 
 		</div>
 	</div>
 
 
-
-      <!-- custom js -->
-      <script src="js/main.js"></script>
       <!-- google maps -->
       <!-- this was from 9.4 lesson 
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs" async defer></script> -->
 
-      <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs&callback=initMap"></script>
 
 
 </body>
